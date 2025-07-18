@@ -1,0 +1,311 @@
+/* 기본 스타일 및 폰트 설정 */
+:root {
+    --bg-color: #dcd8d1;
+    --text-color: #000000;
+    --border-color: #000000;
+    --font-display: 'Anton', sans-serif;
+    --font-heading: 'Inter', sans-serif;
+    --font-body: 'Lora', serif;
+    --font-decorative: 'Cinzel Decorative', serif; /* 원본의 장식적인 폰트 대체 */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    font-family: var(--font-heading);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    min-height: 100vh;
+}
+
+.page-container {
+    background-color: var(--bg-color);
+    width: 100%;
+    max-width: 1100px;
+    padding: 20px 30px;
+}
+
+/* 상단 헤더 */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.site-header svg {
+    width: 28px;
+    height: 28px;
+    fill: var(--text-color);
+}
+
+/* 메인 타이틀 */
+.hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(80px, 15vw, 180px); 
+    text-align: center;
+    line-height: 0.9;
+    letter-spacing: -0.05em; 
+    border: 1px solid var(--border-color);
+    padding: 20px 10px 10px;
+    margin-bottom: -1px; 
+
+}
+
+/* 4개 카테고리 그리드 */
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid var(--border-color);
+}
+
+.category-box {
+    padding: 25px;
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+/* 짝수번째 박스는 오른쪽 테두리 제거 */
+.category-box:nth-child(2n) {
+    border-right: none;
+}
+
+
+.box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.box-header h2 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.box-header span {
+    font-size: 1.5rem;
+}
+.category-icon {
+    width: 48px;
+    height: 48px;
+    fill: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.arrow-link {
+  text-decoration: none; /* 링크 밑줄 제거 */
+  color: inherit;        /* 링크 색상을 기본 텍스트처럼 유지 */
+  display: block;        /* 박스형으로 만들기 위해 블록 요소로 */
+}
+
+.category-box p {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    max-width: 80%;
+}
+
+/* 하단 콘텐츠 그리드 */
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+    gap: 40px;
+    padding-top: 40px;
+}
+
+/* Latest Inclusions */
+.latest-inclusions h2 {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+.latest-inclusions .meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.latest-inclusions p {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+/* Recently Added */
+.recently-added {
+    display: flex;
+    flex-direction: column;
+}
+
+.recently-added h2 {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+.recently-added .meta.date {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.font-display {
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* 원하는 높이 */
+  }
+  
+
+  
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .logo {
+    width: 48px;
+    height: 48px;
+    background: #0077ff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    user-select: none;
+  }
+  
+  .name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111;
+  }
+  
+  .title {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 4px;
+  }
+  
+  .contact-info {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  .contact-info span {
+    display: block;
+  }
+  
+
+.font-name {
+    font-family: var(--font-decorative);
+    font-size: 4rem;
+}
+
+.font-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    line-height: 1.4;
+}
+.font-meta span:last-child {
+    text-align: right;
+}
+
+/* 🎯 원형 커서 스타일 */
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+    background-color: #000;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 9999;
+    transition: background 0.2s ease, transform 0.1s ease;
+  }
+  
+  /* 🎯 클릭 시 물결 효과 스타일 */
+  .ripple {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: scale(0);
+    animation: ripple-effect 0.6s ease-out forwards;
+    z-index: 9998;
+  }
+  
+  @keyframes ripple-effect {
+    to {
+      transform: scale(3);
+      opacity: 0;
+    }
+  }
+
+  .site-footer {
+    margin-top: 40px;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+    background: var(--bg-color);
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+  
+  .social-links a {
+    color: var(--text-color);
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #0077ff;
+  }
+#typewriter-text {
+  overflow: hidden;            /* 텍스트가 넘치는 부분 숨기기 */
+  border-right: 3px solid black; /* 커서 역할 */
+  white-space: nowrap;         /* 한 줄로 */
+  animation: typing 2.5s steps(10, end), blink-caret 0.75s step-end infinite;
+}
+
+/* 타자 치는 애니메이션: steps(글자수) 맞추기 */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* 커서 깜빡임 */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black }
+}
+  
