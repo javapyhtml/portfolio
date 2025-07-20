@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sooyeon Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- 디자인에 필요한 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;700&family=Lora&family=Cinzel+Decorative:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="page-container">
+        <!-- 상단 헤더 -->
+        <header class="site-header">
+            <div class="icon-menu">
+                <svg viewBox="0 0 24 24">
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                </svg>
+            </div>
+            <div>PORTFOLIO &MPERSAND WEB PUBLISHER</div>
+            <div class="icon-search">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                </svg>
+            </div>
+        </header>
+
+        <main>
+            <!-- 메인 타이틀 -->
+            <section class="hero">
+                <h1 class="hero-title">
+                    <span class="ghost-text">S O O Y E O N</span>
+                    <span class="typing-text" id="typewriter-text"></span>
+
+                </h1>
+            </section>
+
+
+
+            <section class="content-grid">
+                <article class="latest-inclusions">
+                    <h2>Latest font inclusions</h2>
+                    <div class="meta">
+                        <span>DECEMBER 2020</span>
+                        <span>34 TYPEFACES</span>
+                        <span>CURATED BY A. MALLEY</span>
+                    </div>
+                    <p></p>
+                    <div class="badge-container">
+                        <span class="badge html" data-percent="92%">HTML5</span>
+                        <span class="badge css" data-percent="87%">CSS3</span>
+                        <span class="badge js" data-percent="80%">JavaScript</span>
+                        <span class="badge ts" data-percent="73%">TypeScript</span>
+                        <span class="badge sass" data-percent="85%">SASS</span>
+                        <span class="badge tailwind" data-percent="76%">Tailwind</span>
+                        <span class="badge react" data-percent="78%">React</span>
+                        <span class="badge git" data-percent="90%">Git</span>
+                        <span class="badge github" data-percent="88%">GitHub</span>
+                        <span class="badge figma" data-percent="70%">Figma</span>
+                        <span class="badge notion" data-percent="65%">Notion</span>
+                        <span class="badge vscode" data-percent="95%">VS Code</span>
+                    </div>
+
+
+                    </p>
+                </article>
+
+                <aside class="recently-added">
+                    <h2>Recently added</h2>
+                    <div class="meta date">2025 07 19</div>
+
+
+                    <div class="card">
+                        <div class="card-inner">
+                            <!-- 앞면 -->
+                            <div class="card-front" style="background-color: #fff7e6;">
+                                <h2>Sooyeon Lee</h2>
+
+                                <div class="qr">
+                                    <img src="./images/제목_없음-removebg-preview.png" alt="QR Code">
+                                </div>
+
+                                <div class="info">
+                                    <p><strong>010 - 6598 - 9114</strong></p>
+                                    <p>javapyhtml@gmail.com</p>
+                                    <p>Web Publisher &amp; Frontend Developer</p>
+                                </div>
+                            </div>
+                            <!-- 뒷면 -->
+                            <div class="card-back">
+                                <img src="/images/무제-4.png" width="400px" height="200px" style="border-radius: 10px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="font-meta">
+                        <span>DESIGNED BY<br>JAMES EDMONDSON</span>
+                        <span>OHNO TYPE</span>
+                    </div>
+                </aside>
+            </section>
+            <br><br>
+            <section class="categories-grid">
+                <div class="category-box" onmouseover="showThumbnail('mmca')" onmouseout="hideThumbnail()">
+                    <div class="box-header">
+                        <h2>MMCA (Renewal)</h2>
+                        <a href="https://javapyhtml.github.io/mmca-renewal/" class="arrow-link">→</a>
+                    </div>
+                    <img src="./images/mmca.png" width="280px" />
+                    <p>현대미술관의 전시를 스크롤 애니메이션과 인터랙션으로 구현<br>
+                        <span class="hashtags">#ScrollTrigger #GSAP #전시UX #LenisScroll #그리드레이아웃</span>
+                    </p>
+                </div>
+
+                <div class="category-box" onmouseover="showThumbnail('pantone')" onmouseout="hideThumbnail()">
+                    <div class="box-header">
+                        <h2>PANTONE (Renewal)</h2>
+                        <a href="https://javapyhtml.github.io/pantone-renewal/" class="arrow-link">→</a>
+                    </div>
+<img src="./images/pantone.png" width="200px" style="padding-bottom: 30px;" />
+
+                    <p>올해의 색상들을 스크롤에 따라 전환하는 컬러 애니메이션 페이지<br>
+                        <span class="hashtags">#GSAP #ScrollAnimation #스크롤이벤트 #배경색변화 #컬러그리드</span>
+                    </p>
+                </div>
+                <div class="category-box" onmouseover="showThumbnail('naver')" onmouseout="hideThumbnail()">
+                    <div class="box-header">
+                        <h2>NAVER Clone</h2>
+                        <a href="https://javapyhtml.github.io/naver-clone/" class="arrow-link">→</a>
+                    </div>
+<img src="./images/naver.png" width="200px" style="padding-bottom: 30px;" />
+                    <p>실제 네이버 메인을 정교하게 클론한 웹퍼블리싱 중심 프로젝트<br>
+                        <span class="hashtags">#네이버클론 #웹퍼블리싱 #CSS스프라이트 #접근성 #Grid #Flex</span>
+                    </p>
+                </div>
+
+                <div class="category-box" onmouseover="showThumbnail('oliveyoung')" onmouseout="hideThumbnail()">
+                    <div class="box-header">
+                        <h2>Oliveyoung Clone</h2>
+                        <a href="https://javapyhtml.github.io/oliveyoung-clone/" class="arrow-link">→</a>
+                    </div>
+<img src="./images/oliveyoung.png" width="200px" style="padding-bottom: 30px;" />
+                    <p>JS 기반 쇼핑몰 인터페이스 구현. 반응형 배너 및 상품 추천 포함<br>
+                        <span class="hashtags">#반응형웹 #JavaScript #클론코딩 #상품추천UI #슬라이드배너</span>
+                    </p>
+                </div>
+                <div class="category-box" onmouseover="showThumbnail('pentaport')" onmouseout="hideThumbnail()">
+                    <div class="box-header">
+                        <h2>Pentaport Rock Festival (Renewal)</h2>
+                        <a href="https://javapyhtml.github.io/pentaport-renewal/" class="arrow-link">→</a>
+                    </div>
+<img src="./images/pentaport.png" width="280px" height="70px" style="padding-bottom: 30px;" />
+                    <p>공연 날짜/아티스트/패럴랙스 배경으로 구성된 페스티벌 웹사이트<br>
+                        <span class="hashtags">#패럴랙스 #날짜하이라이트 #페스티벌UI #VanillaJS #반응형디자인</span>
+                    </p>
+                </div>
+                <div class="category-box" onmouseover="showThumbnail('nosepick')" onmouseout="hideThumbnail()">
+                    <div class="box-header">
+                        <h2>NosePick Spectrum</h2>
+                        <a href="https://javapyhtml.github.io/nosepick/" class="arrow-link">→</a>
+                    </div>
+                    <svg class="category-icon" viewBox="0 0 32 32">
+                        <path d="M4 4h6v6H4z M13 4h6v6h-6z M22 4h6v6h-6z M4 13h6v6H4z M13 13h6v6h-6z M22 13h6v6h-6z" />
+                    </svg>
+                    <p>향수를 인터랙티브하게 탐색할 수 있는 필터형 UI 라이브러리<br>
+                        <span class="hashtags">#PerfumeLibrary #StickyUI #DetailPanel #BrandFilter
+                            #DynamicRendering</span>
+                    </p>
+                </div>
+
+                <div class="category-box" onmouseover="showThumbnail('colormood')" onmouseout="hideThumbnail()">
+                    <div class="box-header">
+                        <h2>Color Mood Gallery</h2>
+                        <a href="project/color-mood.html" class="arrow-link">→</a>
+                    </div>
+                    <svg class="category-icon" viewBox="0 0 32 32">
+                        <path d="M4 4h6v6H4z M13 4h6v6h-6z M22 4h6v6h-6z M4 13h6v6H4z M13 13h6v6h-6z M22 13h6v6h-6z" />
+                    </svg>
+                    <p>컬러 테마 선택 시 실시간 반영되는 인터랙티브 스타일 가이드<br>
+                        <span class="hashtags">#컬러팔레트 #CSS변수 #HEX표시 #SVG컬러링 #다크모드토글</span>
+                    </p>
+                </div>
+
+                <div class="category-box" onmouseover="showThumbnail('alchemistry')" onmouseout="hideThumbnail()">
+                    <div class="box-header">
+                        <h2>KeePet</h2>
+                        <a href="https://www.notion.so/prxgramming/Final-Project-241212-250214-234df1073a33808d83fedb7bed889ce6?source=copy_link" class="arrow-link">→</a>
+                    </div>
+                    <svg class="category-icon" viewBox="0 0 32 32">
+                        <path d="M4 8h16v2H4z M4 15h16v2H4z M4 22h16v2H4z M22 14l6-4v10l-6-4z" />
+                    </svg>
+                    <p>펫시터 신청, 확인, 돌봄일지 작성을 통해 운영되는 사이트<br>
+                        <span class="hashtags">#DragAndCombine #LocalStorage #조합시스템 #모달인터랙션 #게임UI</span>
+                    </p>
+                </div>
+            </section>
+
+
+            <footer class="site-footer">
+                <div class="social-links">
+                    <a href="https://github.com/javapyhtml" target="_blank" aria-label="GitHub"
+                        rel="noopener noreferrer">
+                        <!-- GitHub SVG -->
+                        <svg role="img" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" aria-hidden="true">
+                            <title>GitHub icon</title>
+                            <path
+                                d="M12 0.297C5.37 0.297 0 5.67 0 12.3c0 5.29 3.438 9.77 8.205 11.36.6.11.82-.26.82-.58v-2.16c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.73.08-.73 1.22.09 1.86 1.25 1.86 1.25 1.08 1.85 2.83 1.31 3.52 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.39 1.24-3.23-.13-.3-.54-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.47 11.47 0 013-.4c1.02 0 2.05.14 3 .4 2.3-1.56 3.3-1.23 3.3-1.23.66 1.65.25 2.87.12 3.17.77.84 1.24 1.92 1.24 3.23 0 4.61-2.8 5.62-5.48 5.92.43.37.82 1.1.82 2.22v3.3c0 .32.22.7.82.58A12.02 12.02 0 0024 12.3c0-6.63-5.37-12.003-12-12.003z" />
+                        </svg>
+                    </a>
+                    <a href="https://prxgramming.notion.site/About-Me-115df1073a3380f9a981f68639579746?source=copy_link"
+                        target="_blank" aria-label="Notion" rel="noopener noreferrer">
+                        <!-- Notion SVG -->
+                        <svg role="img" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" aria-hidden="true">
+                            <title>Notion icon</title>
+                            <path d="M4 3h12l4 4v14H4V3z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"
+                                fill="none" />
+                            <path d="M15 3v14l-6-4V7l6-4z" fill="currentColor" />
+                        </svg>
+                    </a>
+                    <a href="mailto:sooyeon@example.com" aria-label="Email">
+                        <!-- Email SVG -->
+                        <svg role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            aria-hidden="true">
+                            <title>Email icon</title>
+                            <rect x="2" y="4" width="20" height="16" rx="2" ry="2" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                    </a>
+                </div>
+            </footer>
+
+
+
+        </main>
+    </div>
+    <script>
+        // 🎯 원형 커서 생성
+        const cursor = document.createElement('div');
+        cursor.classList.add('cursor');
+        document.body.appendChild(cursor);
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.top = `${e.clientY}px`;
+            cursor.style.left = `${e.clientX}px`;
+        });
+
+        // 🎯 클릭 시 물결 효과 추가
+        document.addEventListener('click', (e) => {
+            const ripple = document.createElement('div');
+            ripple.classList.add('ripple');
+            ripple.style.left = `${e.clientX - 50}px`;
+            ripple.style.top = `${e.clientY - 50}px`;
+            document.body.appendChild(ripple);
+
+            // 효과 끝나면 제거
+            setTimeout(() => {
+                ripple.remove();
+            }, 600);
+        });
+
+        const text = "S O O Y E O N";
+        const typingEl = document.getElementById("typewriter-text");
+        let i = 0;
+
+        function type() {
+            if (i < text.length) {
+                typingEl.textContent += text[i];
+                i++;
+                setTimeout(type, 150); // 타이핑 속도 조절
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            type();
+        });
+
+    </script>
+
+</body>
+
+</html>
